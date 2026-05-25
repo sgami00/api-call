@@ -54,13 +54,14 @@ php artisan key:generate
 
 Open the `.env` file and update the database configuration:
 
+```
 DB_CONNECTION=mysql
 DB_HOST=127.0.0.1
 DB_PORT=3306
 DB_DATABASE=student_db
 DB_USERNAME=root
 DB_PASSWORD=
-
+```
 
 ---
 
@@ -96,6 +97,7 @@ http://127.0.0.1:8000
 ---
 
 # API Endpoints
+
 
 | Method | Endpoint | Description |
 |--------|-----------|-------------|
