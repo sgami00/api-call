@@ -73,7 +73,7 @@ Depending on the name of your database
 Open MySQL Workbench or SQLite and create a database named:
 
 
-student_db
+student_db or It depends on the name of your database
 
 
 ---
