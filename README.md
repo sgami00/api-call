@@ -1,6 +1,6 @@
 api-call
 
-Short Descrition:
+Short Description:
 
 API call in Laravel are requests sent between the client and server to perform operations such as retrieving, creating, updating, or deleting data. Each API call uses an HTTP method like GET, POST, PUT, PATCH, or DELETE to specify the action being performed on the resource.
 
@@ -135,12 +135,14 @@ app/
 
  │    └── Controllers/
 
- │         └── StudentsController.php
+ │
+          └── StudentsController.php
  │
 
  ├── Models/
 
- │    └── Student.php
+ │ 
+    └── Student.php
  │
 
 routes/
