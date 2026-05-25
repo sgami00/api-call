@@ -143,6 +143,7 @@ JSON Body:
 
 {
   "name": "John Doe",
+  "email": "JDoe@email.com" ,
   "course": "BSIT"
 }
 
@@ -159,7 +160,7 @@ JSON Body:
 
 {
   "name": "Jane Doe",
-  "email": "JDoe@email.com"
+  "email": "JDoe@email.com" ,
   "course": "BSCS"
 }
 
