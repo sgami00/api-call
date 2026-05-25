@@ -206,7 +206,7 @@ http://127.0.0.1:8000/api/students
 
 # Project Structure
 
-
+```
 app/
  ├── Http/
  │    └── Controllers/
@@ -220,7 +220,7 @@ routes/
 
 database/
  └── migrations/
-
+```
 
 ---
 
