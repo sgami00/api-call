@@ -159,6 +159,7 @@ JSON Body:
 
 {
   "name": "Jane Doe",
+  "email": "JDoe@email.com"
   "course": "BSCS"
 }
 
