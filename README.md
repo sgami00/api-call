@@ -105,7 +105,7 @@ DB_PASSWORD=
 
 Open MySQL Workbench or phpMyAdmin and create a database named:
 
-```txt
+```
 student_db
 ```
 
@@ -242,15 +242,15 @@ DELETE /api/students/1
 
 Example URL:
 
-```txt
+```
 http://127.0.0.1:8000/api/students
 ```
 
 ---
 
-<h1>Project Structure</h1>
+# Project Structure
 
-
+```
 app/
  ├── Http/
  │    └── Controllers/
@@ -264,25 +264,31 @@ routes/
 
 database/
  └── migrations/
+```
 
-Common Laravel Commands
+---
 
-Run Server
+# Common Laravel Commands
 
+## Run Server
+
+```bash
 php artisan serve
+```
 
+## Run Migration
 
-Run Migration
-
+```bash
 php artisan migrate
+```
 
+## Clear Cache
 
-Clear Cache
-
+``` bash
 php artisan optimize:clear
+```
 
-
-Author
+# Author
 
 Developed using Laravel API-call for educational purposes.
 
