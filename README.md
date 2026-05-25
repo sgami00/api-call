@@ -1,6 +1,6 @@
 # API CALL
 
-A simple RESTful API built using Laravel for managing student records. This project allows users to perform CRUD operations such as creating, retrieving, updating, and deleting student information using API endpoints.
+API calls in Laravel are requests sent between the client and server to perform operations such as retrieving, creating, updating, or deleting data. Each API call uses an HTTP method like GET, POST, PUT, PATCH, or DELETE to specify the action being performed on the resource.
 
 ---
 
