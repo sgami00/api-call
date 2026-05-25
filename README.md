@@ -2,210 +2,133 @@ api call
 
 API call in Laravel are requests sent between the client and server to perform operations such as retrieving, creating, updating, or deleting data. Each API call uses an HTTP method like GET, POST, PUT, PATCH, or DELETE to specify the action being performed on the resource.
 
-# Student API System
+Instructions in api call
 
-A simple RESTful API built using Laravel for managing student records.
+Student API System
 
----
+A simple RESTful API project built with Laravel for managing student records. This API allows users to create, retrieve, update, and delete student information using different HTTP requests.
 
-# Features
+Features
+View all students
+View a single student by ID
+Add new student records
+Update existing student information
+Partially update student details
+Delete a specific student
+Delete all student records
 
-* Fetch all students
-* Fetch one student by ID
-* Create a new student
-* Update student information
-* Partially update student information
-* Delete one student
-* Delete all students
+Built With
+PHP
+Laravel
+MySQL
+Postman
 
----
-
-# Technologies Used
-
-* PHP
-* Laravel
-* MySQL
-* Postman
-
----
-
-# Installation Guide
-
-## Step 1 — Clone the Repository
-
-```bash
+Installation
+1. Clone the Repository
 git clone https://github.com/your-username/student-api.git
-```
-
----
-
-## Step 2 — Open the Project Folder
-
-```bash
+2. Go to the Project Folder
 cd student-api
-```
-
----
-
-## Step 3 — Install Dependencies
-
-```bash
+3. Install Laravel Dependencies
 composer install
-```
+4. Setup Environment File
 
----
+Copy the example environment file:
 
-## Step 4 — Configure Environment File
-
-Copy the `.env.example` file:
-
-```bash
 cp .env.example .env
-```
 
-Generate application key:
+Generate the application key:
 
-```bash
 php artisan key:generate
-```
+5. Configure the Database
 
----
+Open the .env file and update the database credentials:
 
-## Step 5 — Configure Database
-
-Open the `.env` file and update:
-
-```env
 DB_CONNECTION=mysql
 DB_HOST=127.0.0.1
 DB_PORT=3306
 DB_DATABASE=student_db
 DB_USERNAME=root
 DB_PASSWORD=
-```
 
-Create the database in MySQL Workbench or phpMyAdmin.
+After that, create a database named:
 
----
+student_db
 
-## Step 6 — Run Database Migration
+You can create it using MySQL Workbench or phpMyAdmin.
 
-```bash
+6. Run Migration
 php artisan migrate
-```
 
----
+This will create the necessary tables in the database.
 
-## Step 7 — Start Laravel Server
-
-```bash
+7. Run the Laravel Server
 php artisan serve
-```
 
-Server URL:
+The project will run at:
 
-```txt
 http://127.0.0.1:8000
-```
-
----
-
-# API Routes
-
-| Method | Endpoint             | Description         |
-| ------ | -------------------- | ------------------- |
-| GET    | `/api/students`      | Fetch all students  |
-| GET    | `/api/students/{id}` | Fetch one student   |
-| POST   | `/api/students`      | Create new student  |
-| PUT    | `/api/students/{id}` | Update student      |
-| PATCH  | `/api/students/{id}` | Partial update      |
-| DELETE | `/api/students/{id}` | Delete one student  |
-| DELETE | `/api/students`      | Delete all students |
-
----
-
-# Example API Requests
-
-## GET All Students
-
-```http
+API Endpoints
+Method	Endpoint	Description
+GET	/api/students	Get all students
+GET	/api/students/{id}	Get student by ID
+POST	/api/students	Create a student
+PUT	/api/students/{id}	Update student
+PATCH	/api/students/{id}	Partially update student
+DELETE	/api/students/{id}	Delete one student
+DELETE	/api/students	Delete all students
+Sample Requests
+Get All Students
 GET /api/students
-```
-
----
-
-## POST Create Student
-
-```http
+Create Student
 POST /api/students
-```
 
-Example JSON Body:
+Request Body:
 
-```json
 {
-  "name": "John Doe",
+  "name": "Test1",
+  "email": "Test1@gmail.com",
   "course": "BSIT"
 }
-```
-
----
-
-## PUT Update Student
-
-```http
+Update Student
 PUT /api/students/1
-```
 
-Example JSON Body:
+Request Body:
 
-```json
 {
-  "name": "Jane Doe",
+  "name": "Test1",
+  "email": "Test1@gmail.com",
   "course": "BSCS"
 }
-```
-
----
-
-## DELETE Student
-
-```http
+Delete Student
 DELETE /api/students/1
-```
+Testing the API in Postman
+Open Postman
+Create a new request
+Choose the HTTP method
+Enter the API endpoint
+Click Send
 
----
-
-# Testing Using Postman
-
-1. Open Postman
-2. Create a new request
-3. Select HTTP Method
-4. Enter API URL
-5. Click Send
-
-Example URL:
-
-```txt
+Example:
 http://127.0.0.1:8000/api/students
-```
-
----
-
-# Project Structure
-
-```txt
+Project Structure
 app/
  ├── Http/
  │    └── Controllers/
  │         └── StudentsController.php
+ │
  ├── Models/
  │    └── Student.php
+ │
 routes/
  └── api.php
+ │
 database/
  └── migrations/
-```
+
+Note:
+Make sure MySQL is running before starting the Laravel server.
+Use Postman to test all API endpoints.
+Migration must be completed before using the API.
 
 
 
