@@ -62,6 +62,9 @@ DB_DATABASE=student_db
 DB_USERNAME=root
 DB_PASSWORD=
 ```
+## Take Note
+
+Depending on the name of your database
 
 ---
 
