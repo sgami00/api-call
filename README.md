@@ -1,22 +1,10 @@
-api call
+api-call
 
+Short Descrition:
 API call in Laravel are requests sent between the client and server to perform operations such as retrieving, creating, updating, or deleting data. Each API call uses an HTTP method like GET, POST, PUT, PATCH, or DELETE to specify the action being performed on the resource.
 
+
 Instructions in api call
-
-Student API System
-
-A simple RESTful API project built with Laravel for managing student records. This API allows users to create, retrieve, update, and delete student information using different HTTP requests.
-
-Features
-View all students
-View a single student by ID
-Add new student records
-Update existing student information
-Partially update student details
-Delete a specific student
-Delete all student records
-
 Built With
 PHP
 Laravel
@@ -130,6 +118,6 @@ Make sure MySQL is running before starting the Laravel server.
 Use Postman to test all API endpoints.
 Migration must be completed before using the API.
 
+Google Drive link video
 
-
-
+https://drive.google.com/drive/folders/1pblfwm5rVkCM5B4sOMp6_e2d_Sd85W6n?usp=sharing
