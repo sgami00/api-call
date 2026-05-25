@@ -1,38 +1,6 @@
-api-call
-
-Short Description:
-
-API call in Laravel are requests sent between the client and server to perform operations such as retrieving, creating, updating, or deleting data. Each API call uses an HTTP method like GET, POST, PUT, PATCH, or DELETE to specify the action being performed on the resource.
-
-
-Instructions in api call
-
-# Student API System
+# API CALL
 
 A simple RESTful API built using Laravel for managing student records. This project allows users to perform CRUD operations such as creating, retrieving, updating, and deleting student information using API endpoints.
-
----
-
-## Features
-
-- Fetch all students
-- Fetch student by ID
-- Create new student
-- Update student information
-- Partially update student information
-- Delete one student
-- Delete all students
-
----
-
-## Technologies Used
-
-- PHP
-- Laravel
-- MySQL
-- Postman
-- Composer
-- Git
 
 ---
 
@@ -46,17 +14,15 @@ Follow the steps below to clone and run the project on your local machine.
 
 Open Terminal, Git Bash, Command Prompt, or VS Code Terminal and run:
 
-```bash
 git clone https://github.com/your-username/student-api.git
-```
+
 
 ---
 
 ## Step 2 — Open the Project Folder
 
-```bash
 cd student-api
-```
+
 
 ---
 
@@ -64,9 +30,8 @@ cd student-api
 
 Install Laravel dependencies using Composer:
 
-```bash
 composer install
-```
+
 
 ---
 
@@ -74,15 +39,14 @@ composer install
 
 Copy the `.env.example` file:
 
-```bash
+
 cp .env.example .env
-```
+
 
 Generate the Laravel application key:
 
-```bash
 php artisan key:generate
-```
+
 
 ---
 
@@ -90,32 +54,29 @@ php artisan key:generate
 
 Open the `.env` file and update the database configuration:
 
-```env
 DB_CONNECTION=mysql
 DB_HOST=127.0.0.1
 DB_PORT=3306
 DB_DATABASE=student_db
 DB_USERNAME=root
 DB_PASSWORD=
-```
+
 
 ---
 
 ## Step 6 — Create Database
 
-Open MySQL Workbench or phpMyAdmin and create a database named:
+Open MySQL Workbench or SQLite and create a database named:
 
-```
+
 student_db
-```
+
 
 ---
 
 ## Step 7 — Run Database Migration
 
-```bash
 php artisan migrate
-```
 
 This command creates the necessary database tables.
 
@@ -123,15 +84,14 @@ This command creates the necessary database tables.
 
 ## Step 8 — Run Laravel Server
 
-```bash
 php artisan serve
-```
+
 
 Server URL:
 
-```txt
+
 http://127.0.0.1:8000
-```
+
 
 ---
 
@@ -153,81 +113,77 @@ http://127.0.0.1:8000
 
 ## GET All Students
 
-```http
+
 GET /api/students
-```
+
 
 Example URL:
 
-```txt
+
 http://127.0.0.1:8000/api/students
-```
 
 ---
 
 ## GET Student by ID
 
-```http
-GET /api/students/1
-```
+
+GET http://127.0.0.1:8000/api/students/1
+
 
 ---
 
 ## POST Create Student
 
-```http
-POST /api/students
-```
+
+POST http://127.0.0.1:8000/api/students
+
 
 JSON Body:
 
-```json
+
 {
   "name": "John Doe",
   "course": "BSIT"
 }
-```
+
 
 ---
 
 ## PUT Update Student
 
-```http
-PUT /api/students/1
-```
+
+PUT http://127.0.0.1:8000/api/students/1
+
 
 JSON Body:
 
-```json
 {
   "name": "Jane Doe",
   "course": "BSCS"
 }
-```
+
 
 ---
 
 ## PATCH Partial Update Student
 
-```http
-PATCH /api/students/1
-```
+
+PATCH http://127.0.0.1:8000/api/students/1
+
 
 JSON Body:
 
-```json
 {
   "course": "BS Information Technology"
 }
-```
+
 
 ---
 
 ## DELETE Student
 
-```http
-DELETE /api/students/1
-```
+DELETE http://127.0.0.1:8000/api/students/1
+
 
 ---
 
@@ -242,15 +198,15 @@ DELETE /api/students/1
 
 Example URL:
 
-```
+
 http://127.0.0.1:8000/api/students
-```
+
 
 ---
 
 # Project Structure
 
-```
+
 app/
  ├── Http/
  │    └── Controllers/
@@ -264,7 +220,7 @@ routes/
 
 database/
  └── migrations/
-```
+
 
 ---
 
@@ -272,21 +228,20 @@ database/
 
 ## Run Server
 
-```bash
+
 php artisan serve
-```
+
 
 ## Run Migration
 
-```bash
 php artisan migrate
-```
+
 
 ## Clear Cache
 
-``` bash
 php artisan optimize:clear
-```
+
+
 
 # Author
 
