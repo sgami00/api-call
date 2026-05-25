@@ -14,6 +14,7 @@ MySQL
 Postman
 
 Installation
+
 1. Clone the Repository
 git clone https://github.com/your-username/student-api.git
 2. Go to the Project Folder
@@ -136,10 +137,12 @@ app/
 
  │         └── StudentsController.php
  │
+
  ├── Models/
 
  │    └── Student.php
  │
+
 routes/
 
  └── api.php
